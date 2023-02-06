@@ -1,724 +1,1055 @@
-
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <link href="images/favicon.png" rel="icon" />
+    <title>Suman Sarkar</title>
+    <meta
+      name="description"
+      content="Callum is responsive bootstrap 5 one page personal portfolio html template."
+    />
+    <meta name="author" content="harnishdesign.net" />
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Suman Sarkar | Full stack web app developer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Full stack web developer"/>
-        <meta name="keywords" content="Freelance WordPress Developer | WordPress Theme Development | WordPress Plugin Development | Shopfiy Developer"/>
-        <!-- favicon -->
-        <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Main css File -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt"/>
-        <link href="css/default.css" rel="stylesheet" id="color-opt"/>
-        
-    </head>
+    <!-- Web Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      type="text/css"
+    />
 
-    <body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="20">
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
+    <!-- Stylesheet
+============================== -->
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- Colors Css -->
+    <link id="color-switcher" type="text/css" rel="stylesheet" href="#" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper   
+=============================== -->
+    <div id="main-wrapper">
+      <!-- Header -->
+      <header id="header" class="sticky-top">
+        <!-- Navbar -->
+        <nav
+          class="primary-menu navbar navbar-expand-none navbar-overlay navbar-overlay-dark bg-transparent border-bottom-0 text-5 fw-600"
+        >
+          <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="index.html" title="Callum">
+              <img src="images/logo.png" alt="Callum" />
+            </a>
+            <!-- Logo End -->
+            <div class="text-3 ms-auto me-2">
+              <span class="text-4 me-2"><i class="fas fa-phone"></i></span>(+91)
+              9874362324
             </div>
-        </div>
-        <!-- Loader -->
-
-        <!-- Navbar Start -->
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <a class="logo" href="javascript:void(0)">Suman Sarkar</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                    <i class="mdi mdi-menu"></i>
-                </button><!--end button-->
-
-                <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-                    <ul id="navbar-navlist" class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Expertise</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Techonolgy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#news">Blog</a>
-                        </li><!--end nav item-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li><!--end nav item-->
-                       
-                    </ul>
-
-                    <!-- <ul class="top-right text-end list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
-                        <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item me-2"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
-                    </ul> -->
-                    
-                </div> 
-            </div><!--end container-->
-        </nav><!--end navbar-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#header-nav"
+            >
+              <span></span><span></span><span></span>
+            </button>
+            <div id="header-nav" class="collapse navbar-collapse">
+              <div
+                class="d-flex flex-column h-100 align-items-center justify-content-center"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll active" href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#about">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#services"
+                      >What I Do</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#resume">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#portfolio"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <!--<li class="nav-item"><a class="nav-link smooth-scroll" href="#faq">FAQ</a></li>-->
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#testimonial"
+                      >Client Speak</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#contact"
+                      >Contact Me</a
+                    >
+                  </li>
+                </ul>
+                <ul
+                  class="social-icons social-icons-light social-icons-lg social-icons-light d-inline-flex mt-4"
+                >
+                  <li class="social-icons-twitter">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href=""
+                      target="_blank"
+                      title=""
+                      data-bs-original-title="Twitter"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-facebook">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href=""
+                      target="_blank"
+                      title=""
+                      data-bs-original-title="Facebook"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-instagram">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href=""
+                      target="_blank"
+                      title=""
+                      data-bs-original-title="Instagram"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-linkedin">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href=""
+                      target="_blank"
+                      title=""
+                      data-bs-original-title="Linkedin"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li class="social-icons-dribbble">
+                    <a
+                      data-bs-toggle="tooltip"
+                      href=""
+                      target="_blank"
+                      title=""
+                      data-bs-original-title="Dribbble"
+                      ><i class="fab fa-dribbble"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
         <!-- Navbar End -->
+      </header>
+      <!-- Header End -->
 
-        <!-- Hero Area -->
-        <div class="hero-area position-relative bg-half-120 pb-0" style="background-image:url('images/home/home-shape.png')" id="home">
-            <!--<div class="bg-overlay"></div>-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-7 align-items-center">
-                        <div class="title-heading mt-4 py--50">
-                            <!-- <div class="alert alert-transparent alert-pills shadow" role="alert">
-                                <span class="badge badge-pill badge-primary me-1">Hot</span>
-                                <span class="content">Looking for a Designer !</span>
-                            </div> -->
-                            <h1 class="heading text-black">Hii I'am Suman </h1>
-                            <p class="pera-title text-light-muted">Full stack web Developer based in Bangalore, India </p>
-                            <div class="hero-btn mt-4 pt-2">
-                                <a href="#contact" class="btn btn-primary rounded me-2 mb-2">Hire Me</a>
-                                <!-- <a href="javascript:void(0)" class="btn btn-outline-primary rounded text-white mb-2">Download CV <i data-feather="download" class="fea icon-sm"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="home-image">
-                            <img src="images/Internet-on-the-go-bro.png" alt="" class="img-fluid mx-auto position-relative">
-                        </div>
-                    </div>
+      <!-- Content
+  ============================================= -->
+      <div id="content" role="main">
+        <!-- Intro
+    ============================================= -->
+        <section
+          id="home"
+          class="bg-primary d-flex fullscreen position-relative py-5"
+        >
+          <div class="container my-auto py-4">
+            <div class="row">
+              <div
+                class="col-lg-7 text-center text-lg-start align-self-center order-1 order-lg-0 wow fadeIn"
+              >
+                <h1 class="text-12 fw-300 mb-0 text-uppercase">Hi, I'm a</h1>
+                <div class="typed-strings">
+                  <p>Full Stack</p>
+                  <p>Developer</p>
                 </div>
+                <h2 class="text-21 fw-600 text-uppercase mb-0 ms-n1">
+                  <span class="typed"></span>
+                </h2>
+                <p class="text-5">based in India.</p>
+                <a
+                  href="#portfolio"
+                  class="btn btn-dark rounded-0 smooth-scroll mt-3"
+                  >View My Works</a
+                ><a
+                  href="#contact"
+                  class="btn btn-link text-dark smooth-scroll mt-3"
+                  >Contact Me<span class="text-4 ms-2"
+                    ><i class="far fa-arrow-alt-circle-down"></i></span
+                ></a>
+              </div>
+              <div
+                class="col-lg-5 text-center align-self-center mb-4 mb-lg-0 order-0 order-lg-1"
+              >
+                <div
+                  class="bg-light rounded-pill d-inline-block p-3 shadow-lg wow zoomIn"
+                >
+                  <img
+                    class="img-fluid rounded-pill d-block"
+                    src="images/aboutme.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-        </div>
-
-        <section class="bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card public-profile border-0 rounded shadow" style="z-index: 1;">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-3 col-md-4 text-md-start">
-                                        <div class="about-details key-feature bg-light">
-                                            <div class="media-body content">
-                                                <h6 class="title mb-2">Personal Details</h6>
-                                                <div class="bor-bottom mt-2 mb-2"></div>
-                                                <p class="text-muted mb-2 font-14"><a href="javascript:void(0)" class="text-black">Languages: </a> English,Hindi,Bengali</p>
-                                                <p class="text-muted mb-0 font-14"><a href="javascript:void(0)" class="text-black">Nationality: </a> Indian</p>  
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-9 col-md-8">
-                                        <div class="row align-items-end">
-                                            <div class="col-md-12 text-md-start mt-4 mt-sm-0">
-                                                <h4 class="heading me-2">I Am <span class="element text-primary" data-elements="Web Designer, Web Developer, Photographer"></span>
-                                                    <span id="typed" class="text-primary"></span>
-                                                </h4>
-                                                <p class="text-light-muted mt-2">Dedicated and efficient Full stack developer with 10 years experience in application layers, presentation layers, and databases.I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations.</p>
-                                                <img src="images/signature.png" height="35" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--end container-->
-        </section><!--end section -->
-
-        <!-- Service Start -->
-        <section class="section bg-light" id="services">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="container-title text-center mb-4 pb-2">
-                            <div class="titles">
-                                <h2 class="title text-capitalize mb-4">My Expertise</h2>
-                                <!-- <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p> -->
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="feature-widget text-left rounded">
-                            <div class="services-icon rounded-circle text-center">
-                                <img src="images/wordpress.png" alt="" class="img-fluid mx-auto">
-                            </div>
-                            <div class="services-texts text-center">
-                                <h3 class="title mb-3">WordPress Theme Development</h3>
-                                <!-- <p class="text-light-muted mb-4">With lots of unique blocks, you can easily build a pagwordpresse without coding.</p> -->
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="feature-widget text-left rounded">
-                            <div class="services-icon rounded-circle text-center">
-                                    <img src="images/wordpress-plugin.png" alt="" class="img-fluid mx-auto">
-                            </div>
-                            <div class="services-texts text-center">
-                                <h3 class="title mb-3">WordPress Plugin Development</h3>
-                                <!-- <p class="text-light-muted mb-4">With lots of unique blocks, you can easily build a page without coding.</p> -->
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="feature-widget text-left rounded">
-                            <div class="services-icon rounded-circle text-center">
-                                <img src="images/restapi.png" alt="" class="img-fluid mx-auto" width="128" height="128">
-                            </div>
-                            <div class="services-texts text-center">
-                                <h3 class="title mb-3">Restfull API Development For Web And Mobile Application</h3>
-                                <!-- <p class="text-light-muted mb-4">With lots of unique blocks, you can easily build a page without coding.</p> -->
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="feature-widget text-left rounded">
-                            <div class="services-icon rounded-circle text-center">
-                                <img src="images/custom-web-application.png" alt="" class="img-fluid mx-auto" width="128" height="128">
-                            </div>
-                            <div class="services-texts text-center">
-                                <h3 class="title mb-3">Custom Web Application Development</h3>
-                                <!-- <p class="text-light-muted mb-4">With lots of unique blocks, you can easily build a page without coding.</p>-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="feature-widget text-left rounded">
-                            <div class="services-icon rounded-circle text-center">
-                                <img src="images/shopify.png" alt="" class="img-fluid mx-auto" width="128" height="128">
-                            </div>
-                            <div class="services-texts text-center">
-                                <h3 class="title mb-3">Shopify Theme Development</h3>
-                                <!-- <p class="text-light-muted mb-4">With lots of unique blocks, you can easily build a page without coding.</p>-->
-                            </div>
-                        </div>
-                    </div>
-
-                 
-
-                    
-
-                    
-                </div> <!-- end row -->
-            </div>
+          </div>
+          <a href="#about" class="scroll-down-arrow text-dark smooth-scroll"
+            ><span class="animated"><i class="fas fa-arrow-down"></i></span
+          ></a>
         </section>
-        <!-- End Start -->
+        <!-- Intro end -->
 
+        <!-- About
+    ============================================= -->
+        <section id="about" class="section">
+          <div class="container">
+            <!-- Heading -->
+            <p class="text-center mb-2 wow fadeInUp">
+              <span class="bg-primary text-dark px-2">About Me</span>
+            </p>
+            <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">
+              Know Me More
+            </h2>
+            <!-- Heading end-->
 
-        <!-- Start Section -->
-        <!-- <section class="section" id="resume">
-            <div class="container">
-
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-4">
-                        <div class="work-content mt-4">
-                            <h2 class="text-capitalize">Work  Participation</h2>
-                            <p class="mb-0 text-light-muted">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-                            <a href="javascript:void(0)" class="btn btn btn-primary rounded mt-4 pt-2">See More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="main-timeline">
-                                <div class="timeline mt-4">
-                                    <a href="javascript:void(0)" class="timeline-content">
-                                        <div class="timeline-icon text-primary">
-                                            <i data-feather="feather" class="fea icon-md"></i>
-                                        </div>
-                                        <h3 class="title mb-0">UX Designer</h3>
-                                        <small class="company">Vivo - Senior Designer</small>
-                                        <span class="badge skill-badge education-badge badge-light">2015 - 2018</span>
-                                        <p class="description text-light-muted mt-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="timeline mt-4">
-                                    <a href="javascript:void(0)" class="timeline-content">
-                                        <div class="timeline-icon text-primary">
-                                            <i data-feather="navigation" class="fea icon-md"></i>
-                                        </div>
-                                        <h3 class="title mb-0">Web Developer</h3>
-                                        <small class="company">Oppo - HR Manager</small>
-                                        <span class="badge skill-badge education-badge margin-50 badge-light">2012 - 2015</span>
-                                        <p class="description text-light-muted mt-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="timeline mt-4">
-                                    <a href="javascript:void(0)" class="timeline-content">
-                                        <div class="timeline-icon text-primary">
-                                            <i data-feather="package" class="fea icon-md"></i>
-                                        </div>
-                                        <h3 class="title mb-0">Graphic Designer</h3>
-                                        <small class="company">Apple - Testor</small>
-                                        <span class="badge skill-badge education-badge badge-light">2012 - 2010</span>
-                                        <p class="description text-light-muted mt-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+              <div class="col-lg-8 text-center text-lg-start wow fadeInUp">
+                <h2 class="text-8 fw-400 mb-3">
+                  Hi, I'm
+                  <span class="fw-700 border-bottom border-3 border-primary"
+                    >Suman Sarkar</span
+                  >
+                </h2>
+                <p class="text-5">
+                  I'm a Full Stack Web Developer with a passion for online
+                  business. I enjoy developing simple, clean and slick websites
+                  that provide real value to the end user. Thousands of clients
+                  have procured exceptional results while working with me.
+                  Delivering work within time and budget which meets client’s
+                  requirements is my moto.
+                </p>
+              </div>
+              <div
+                class="col-lg-4 mt-4 mt-lg-0 wow fadeInUp"
+                data-wow-delay="0.2s"
+              >
+                <div class="featured-box style-4">
+                  <div
+                    class="featured-box-icon text-25 fw-500 bg-primary rounded-circle"
+                  >
+                    <span class="wow heartBeat" data-wow-delay="1.3s">10</span>
+                  </div>
+                  <h3 class="text-7 wow rubberBand" data-wow-delay="2s">
+                    Years of <span class="fw-700">Experiance</span>
+                  </h3>
                 </div>
+              </div>
             </div>
-        </section> -->
-        <!-- end section -->
+            <div class="row gy-3 mt-4">
+              <div class="col-6 col-lg-3 wow fadeInUp">
+                <p class="text-muted fw-500 mb-0">Name:</p>
+                <p class="text-4 text-dark fw-600 mb-0">Suman Sarkar</p>
+              </div>
+              <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="text-muted fw-500 mb-0">Email:</p>
+                <p class="text-4 fw-600 mb-0">
+                  <a class="link-dark" href="">hello@sumansarkar.dev</a>
+                </p>
+              </div>
 
-
-        <!-- Client Start -->
-        <!-- <section class="section fan-fact" style="background-image:url('images/bg-pattern.png')" id="about">
-            <div class="container">
-                <div class="row" id="counter">
-                    <div class="col-lg-3 col-6 my-3">
-                        <div class="card counter-box border-0 shadow text-center rounded py-3">
-                            <div class="card-body py-5">
-                                <h2 class="mb-0"><span class="counter-value" data-target="97">97</span>%</h2>
-                                <h5 class="counter-head mb-0">Happy Client </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-6 my-3">
-                        <div class="card counter-box border-0 shadow text-center rounded py-3">
-                            <div class="card-body py-5">
-                                <h2 class="mb-0"><span class="counter-value" data-target="15">1</span> M </h2>
-                                <h5 class="counter-head mb-0">Download </h5>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-6 my-3">
-                        <div class="card counter-box border-0 shadow text-center rounded py-3">
-                            <div class="card-body py-5">
-                                <h2 class="mb-0"><span class="counter-value" data-target="3261">30</span> + </h2>
-                                <h5 class="counter-head mb-0">Happy Users </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-6 my-3">
-                        <div class="card counter-box border-0 shadow text-center rounded py-3">
-                            <div class="card-body py-5">
-                                <h2 class="mb-0"><span class="counter-value" data-target="36">3</span> + </h2>
-                                <h5 class="counter-head mb-0">Years of expe. </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <p class="text-muted fw-500 mb-0">From:</p>
+                <p class="text-4 text-dark fw-600 mb-0">India</p>
+              </div>
             </div>
-        </section> -->
-        <!-- End Section Client -->
+          </div>
+        </section>
+        <!-- About end -->
 
+        <!-- Services
+    ============================================= -->
+        <section id="services" class="section bg-light">
+          <div class="container">
+            <!-- Heading -->
+            <p class="text-center mb-2 wow fadeInUp">
+              <span class="bg-primary text-dark px-2">What I Do?</span>
+            </p>
+            <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">
+              How I can help your next project
+            </h2>
+            <!-- Heading end-->
 
-        <!-- Skill & CTA START -->
-        <section class="cta-full" id="resume">
-            <div class="container">
-                <div class="row position-relative">
-                    <div class="col-lg-4 padding-less img" style="background-image:url('images/Nerd-amico.png')" data-jarallax='{"speed": 0.5}'></div><!-- end col -->
-                    <div class="col-lg-8 offset-lg-5">
-                        <div class="cta-full-img-box">
-                            <div class="row justify-content-center">
-                                <div class="col-12 text-center mb-3">
-                                    <div class="container-title">
-                                        <div class="titles">
-                                            <h4 class="title title-line text-capitalize mb-4">Technologies I am Working</h4>
-                                        </div>
-                                        <!-- <p class="text-light-muted mx-auto width-max mb-0">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center">
-                                
-                                
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="https://img.icons8.com/officel/35/000000/php-logo.png" class="img-fluid mx-auto" >
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">75%</span> -->
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="images/skills/nodejs-icon.svg" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">55%</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="https://img.icons8.com/fluency/35/4a90e2/laravel.png" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">55%</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="https://img.icons8.com/windows/35/4a90e2/wordpress-simple.png" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">55%</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="https://img.icons8.com/color/35/4a90e2/shopify.png" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">55%</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="images/skills/react.svg" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">68%</span> -->
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="https://img.icons8.com/material-sharp/35/4a90e2/mysql-logo.png" class="img-fluid mx-auto" >
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">75%</span> -->
-                                        </div>
-                                    </div>
-                                </div>  
-                                <div class="col-lg-3 col-6 mt-4 pt-2">
-                                    <div class="card explore-feature border-0 text-center bg-white p-3">
-                                        <div class="card-body p-0">
-                                            <div class="skill-icon rounded-circle shadow-lg d-inline-block">
-                                                <img src="images/skills/bootstrap.svg" alt="" class="img-fluid mx-auto">
-                                            </div>
-                                            <!-- <span class="badge skill-badge badge-light">70%</span> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- end row -->
-
-                            
-
-                        </div> <!-- end about detail -->
-                    </div> <!-- end col -->        
+            <div class="row gy-5 mt-5">
+              <div class="col-sm-6 col-lg-4 wow fadeInUp">
+                <div class="featured-box text-center px-md-4">
+                  <div class="featured-box-icon text-primary text-13">
+                    <img src="images/wordpress.png" />
+                  </div>
+                  <h3 class="text-6 fw-600 mb-3">
+                    WordPress Theme Development
+                  </h3>
+                  <div class="col-sm-12 text-center">
+                    <a
+                      id="btnSearch"
+                      href="#contact"
+                      class="btn btn-outline-dark shadow-none rounded-0"
+                      >Book A Call</a
+                    >
+                  </div>
+                  <!--<p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. </p>-->
                 </div>
-            </div><!--end container fluid-->
-        </section><!--end section-->   
-        <!-- Skill & CTA End -->
-
-
-        <!-- Projects/Work Start -->
-        <!-- <section class="section bg-light" id="projects">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="container-title text-center mb-4 pb-2">
-                            <div class="titles">
-                                <h2 class="title text-capitalize mb-4">My Work & Portfolio</h2>
-                                <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 wow fadeInUp">
+                <div class="featured-box text-center px-md-4">
+                  <div class="featured-box-icon text-primary text-13">
+                    <img src="images/wordpress-plugin.png" />
+                  </div>
+                  <h3 class="text-6 fw-600 mb-3">
+                    WordPress Plugin Development
+                  </h3>
+                  <div class="col-sm-12 text-center">
+                    <a
+                      id="btnSearch"
+                      href="#contact"
+                      class="btn btn-outline-dark shadow-none rounded-0"
+                      >Book A Call</a
+                    >
+                  </div>
+                  <!--<p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. </p>-->
                 </div>
-
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/1.jpg" class="img-fluid" alt="work-image">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Iphone mockup</a></h5>
-                                    <h6 class="text-light tag mb-0">Branding</h6>
-                                </div>
-                                <div class="icons text-center">
-                                    <a href="javascript:void(0)" data-src="images/portfolio/1.jpg"  data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image">
-                                        <i data-feather="camera" class="fea icon-sm"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/2.jpg" class="img-fluid" alt="work-image">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Mockup Collection</a></h5>
-                                    <h6 class="text-light tag mb-0">Mockup</h6>
-                                </div>
-                                <div class="icons text-center">
-                                    <a href="javascript:void(0)" data-src="images/portfolio/2.jpg" data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="camera" class="fea icon-sm"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/3.jpg" class="img-fluid" alt="work-image">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Abstract images</a></h5>
-                                    <h6 class="text-light tag mb-0">Abstract</h6>
-                                </div>
-                                <div class="icons text-center">
-                                    <a href="javascript:void(0)" data-src="images/portfolio/3.jpg" data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="camera" class="fea icon-sm"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/4.jpg" class="img-fluid" alt="work-image">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Yellow bg with Books</a></h5>
-                                    <h6 class="text-light tag mb-0">Books</h6>
-                                </div>
-                                <div class="icons text-center">
-                                    <a href="javascript:void(0)" data-src="images/portfolio/4.jpg" data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="camera" class="fea icon-sm"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/5.jpg" class="img-fluid" alt="work-image">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Company V-card</a></h5>
-                                    <h6 class="text-light tag mb-0">V-card</h6>
-                                </div>
-                                <div class="icons text-center">
-                                    <a href="javascript:void(0)" data-src="images/portfolio/5.jpg" data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="camera" class="fea icon-sm"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card border-0 work-container work-modern position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/portfolio/6.jpg" class="img-fluid" alt="work-image">
-                                <div class="overlay-work bg-dark"></div>
-                                <div class="content">
-                                    <h5 class="mb-0"><a href="page-portfolio-detail.html" class="text-white title">Mockup box with paints</a></h5>
-                                    <h6 class="text-light tag mb-0">Photography</h6>
-                                </div>
-                                <div class="icons text-center">
-                                    <a href="javascript:void(0)" data-src="images/portfolio/6.jpg" data-gallery="myGal" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="camera" class="fea icon-sm"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 mt-4 pt-2">
-                        <div class="text-center">
-                            <a href="page-portfolio.html" class="btn btn btn-primary rounded">See More <i class="mdi mdi-chevron-right"></i></a>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 wow fadeInUp">
+                <div class="featured-box text-center px-md-4">
+                  <div class="featured-box-icon text-primary text-13">
+                    <img src="images/shopify.png" />
+                  </div>
+                  <h3 class="text-6 fw-600 mb-3">Shopify Development</h3>
+                  <div class="col-sm-12 text-center">
+                    <a
+                      id="btnSearch"
+                      href="#contact"
+                      class="btn btn-outline-dark shadow-none rounded-0"
+                      >Book A Call</a
+                    >
+                  </div>
+                  <!--<p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. </p>-->
                 </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 wow fadeInUp">
+                <div class="featured-box text-center px-md-4">
+                  <div class="featured-box-icon text-primary text-13">
+                    <img src="images/laravel-icon.png" />
+                  </div>
+                  <h3 class="text-6 fw-600 mb-3">Laravel Development</h3>
+                  <div class="col-sm-12 text-center">
+                    <a
+                      id="btnSearch"
+                      href="#contact"
+                      class="btn btn-outline-dark shadow-none rounded-0"
+                      >Book A Call</a
+                    >
+                  </div>
+                  <!--<p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. </p>-->
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 wow fadeInUp">
+                <div class="featured-box text-center px-md-4">
+                  <div class="featured-box-icon text-primary text-13">
+                    <img src="images/custom-web-application.png" />
+                  </div>
+                  <h3 class="text-6 fw-600 mb-3">Custom App Development</h3>
+                  <div class="col-sm-12 text-center">
+                    <a
+                      id="btnSearch"
+                      href="#contact"
+                      class="btn btn-outline-dark shadow-none rounded-0"
+                      >Book A Call</a
+                    >
+                  </div>
+                  <!--<p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. </p>-->
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 wow fadeInUp">
+                <div class="featured-box text-center px-md-4">
+                  <div class="featured-box-icon text-primary text-13">
+                    <img src="images/mobile-app-icon.png" />
+                  </div>
+                  <h3 class="text-6 fw-600 mb-3">Mobile App Development</h3>
+                  <div class="col-sm-12 text-center">
+                    <a
+                      id="btnSearch"
+                      href="#contact"
+                      class="btn btn-outline-dark shadow-none rounded-0"
+                      >Book A Call</a
+                    >
+                  </div>
+                  <!--<p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. </p>-->
+                </div>
+              </div>
+              <!-- <p class="text-center mt-5 wow fadeInUp"><a href="#contact" class="btn btn-outline-dark shadow-none rounded-0">Hire Me</a></p> -->
             </div>
-        </section> -->
-        <!-- Projects End -->
+          </div>
+        </section>
+        <!-- Services end -->
 
-       
+        <!-- Resume
+    ============================================= -->
+        <section id="resume" class="section">
+          <div class="container">
+            <!-- Heading -->
+            <p class="text-center mb-2 wow fadeInUp">
+              <span class="bg-primary text-dark px-2">Resume</span>
+            </p>
+            <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">
+              A summary of My Resume
+            </h2>
+            <!-- Heading end-->
 
-
-        <!-- Contact Start -->
-        <section class="section pb-0" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="container-title text-center mb-4 pb-2">
-                            <div class="titles">
-                                <h2 class="title text-capitalize mb-4">Contact Me</h2>
-                                <!-- <p class="pera-title para-desc-600 text-light-muted mb-0 mx-auto">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p> -->
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row g-5 mt-5">
+              <!-- My Education -->
+              <div class="col-lg-6 wow fadeInUp">
+                <h2 class="text-7 fw-600 mb-4 pb-2">My Education</h2>
+                <div class="border-start border-2 border-primary ps-3">
+                  <h3 class="text-5">B.Tech in Information Technology</h3>
+                  <p class="mb-2">WBUT / 2006 - 2010</p>
+                  <p class="text-muted">
+                    Completed 4 year Full time bachelor's degree from Academy Of
+                    Technology
+                  </p>
+                  <hr class="my-4" />
                 </div>
-
-                <div class="row">
-                    <div class="col-md-4 mt-4 pt-2">
-                        <div class="contact-detail text-center">
-                            <div class="icon">
-                                <i data-feather="phone" class="fea icon-md"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <h5 class="title">Phone</h5>
-                                <a href="tel:+919874362324" class="text-primary">9874362324</a>
-                            </div>  
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 mt-4 pt-2">
-                        <div class="contact-detail text-center">
-                            <div class="icon">
-                                <i data-feather="mail" class="fea icon-md"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <h5 class="title">Email</h5>
-                                <a href="mailto:suman07.rj@gmail.com" class="text-primary">suman07.rj@gmail.com</a>
-                            </div>  
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 mt-4 pt-2">
-                        <div class="contact-detail text-center">
-                            <div class="icon">
-                                <i data-feather="map-pin" class="fea icon-md"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <h5 class="title">Location</h5>
-                                <p class="text-light-muted">India</p>
-                               
-                            </div>  
-                        </div>
-                    </div>
+                <!-- <h2 class="text-7 fw-600 mb-4 pb-2">My Certificate</h2>
+            <div class="border-start border-2 border-primary ps-3">
+              <h3 class="text-5">Master in Computer Engineering</h3>
+              <p class="mb-2">Harvard University / 2015 - 2017</p>
+              <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.</p>
+              <hr class="my-4">
+            </div> -->
+              </div>
+              <!-- My Experience -->
+              <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <h2 class="text-7 fw-600 mb-4 pb-2">My Experience</h2>
+                <div class="border-start border-2 border-primary ps-3">
+                  <h3 class="text-5">Full Stack Web Developer</h3>
+                  <p class="mb-2">2021 - Current</p>
+                  <p class="text-muted">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the dummy text.
+                  </p>
+                  <hr class="my-4" />
+                  <h3 class="text-5">Team Lead</h3>
+                  <p class="mb-2">Rankhigher / November 2018 – December 2020</p>
+                  <p class="text-muted">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the dummy text.
+                  </p>
+                  <hr class="my-4" />
+                  <h3 class="text-5">Seniour Web Developer</h3>
+                  <p class="mb-2">
+                    Tandem Nz Pvt Ltd / April 2018 – November 2018
+                  </p>
+                  <p class="text-muted">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the dummy text.
+                  </p>
                 </div>
-            </div><!--end container-->
-        </section><!--end section-->
-
-        <!--<section class="section pt-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="custom-form mb-sm-30">
-                            <form method="post" action="php/contact.php" name="myForm" onsubmit="return validateForm()">
-                                <p id="error-msg"></p>
-                                <div id="simple-msg"></div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-6">
-                                                <div class="form-group">
-                                                    <input name="name" id="name" type="text" class="form-control border rounded" placeholder="First Name :">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12 col-md-6">
-                                                <div class="form-group">
-                                                    <input name="email" id="email" type="email" class="form-control border rounded" placeholder="Your email :">
-                                                </div> 
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <input name="subject" id="subject" class="form-control border rounded" placeholder="Your subject :">
-                                                </div>                                                                               
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <textarea name="comments" id="comments" rows="4" class="form-control border rounded" placeholder="Your Message :"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 text-end">
-                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn btn-primary rounded" value="Send Message"> 
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>-->
-        <!--end section-->
-        <!-- Contact End -->
 
-        <!-- Footer Start -->
-        <footer class="footer bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <a href="javascript:void(0)" class="footer-logo text-black">Suman</a>
-                        <!-- <p class="para-desc mx-auto mt-5 text-black">Obviously I'm a Web Designer. Experienced with all stages of the development cycle for dynamic web projects.</p> -->
-                        <ul class="list-unstyled mb-0 mt-4 social-icon">
-                            <li class="list-inline-item me-1"><a href="https://www.linkedin.com/in/sumansarkars/" target="_blank"><i data-feather="linkedin" class="fea icon-md"></i></a></li>
-                        </ul>
-                    </div>
+            <!-- My Skills -->
+            <h2 class="text-7 fw-600 mb-4 pb-2 mt-5 wow fadeInUp">My Skills</h2>
+            <div class="row gx-5">
+              <div class="col-md-6 wow fadeInUp">
+                <p class="fw-500 text-start mb-2">
+                  PHP <span class="float-end">96%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
-            </div><!--end container-->
-        </footer><!--end footer-->
-        <footer class="footer footer-bar bg-black">
-            <div class="container text-foot text-center">
-                <p class="mb-0 text-white-50">© <script>document.write(new Date().getFullYear())</script></p>
-            </div><!--end container-->
-        </footer><!--end footer-->
-        <!-- Footer End -->
+                <p class="fw-500 text-start mb-2">
+                  WordPress Theme Development<span class="float-end">94%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 94%"
+                    aria-valuenow="94"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  WordPress Plugin Development<span class="float-end">90%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  Codeigniter <span class="float-end">90%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  Laravel <span class="float-end">88%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 88%"
+                    aria-valuenow="88"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  Shopify <span class="float-end">80%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  MySql <span class="float-end">95%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="fw-500 text-start mb-2">
+                  Bootstrap <span class="float-end">90%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  CSS3 <span class="float-end">85%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  JavaScript <span class="float-end">80%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  Jquery <span class="float-end">80%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  Node Js <span class="float-end">60%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <p class="fw-500 text-start mb-2">
+                  Express Js <span class="float-end">60%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
 
-        <a href="javascript: void(0);" class="back-to-top btn btn-icon btn-soft-primary" id="back-to-top" onclick="topFunction()">
-            <i data-feather="arrow-up" class="icons"></i>
-        </a>
-        <!-- Back to top -->
+                <p class="fw-500 text-start mb-2">
+                  React Js <span class="float-end">60%</span>
+                </p>
+                <div class="progress progress-sm mb-4">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center mt-5 wow fadeInUp">
+              <a
+                href="#contact"
+                class="btn btn-outline-dark shadow-none rounded-0"
+                >Hire Me</a
+              >
+            </p>
+          </div>
+        </section>
+        <!-- Resume end -->
 
-        
-        <!-- End Style Switcher -->
+        <!-- Portfolio
+    ============================================= -->
+        <section id="portfolio" class="section bg-light">
+          <div class="container">
+            <!-- Heading -->
+            <p class="text-center mb-2 wow fadeInUp">
+              <span class="bg-primary text-dark px-2">Projects</span>
+            </p>
+            <h2 class="text-10 fw-600 text-center mb-5 wow fadeInUp">
+              Some of my most recent projects
+            </h2>
+            <!-- Heading end-->
 
-        <!-- Javascript -->
-        <script src="js/bootstrap.bundle.min.js"></script>
+            <!-- Filter Menu -->
+            <ul
+              class="portfolio-menu nav nav-tabs fw-600 justify-content-start justify-content-md-center border-bottom-0 mb-4 wow fadeInUp"
+            >
+              <li class="nav-item">
+                <a data-filter="*" class="nav-link rounded-0 active" href=""
+                  >All</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-filter=".cms" href="" class="nav-link rounded-0"
+                  >CMS/Application</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-filter=".ecommerce" href="" class="nav-link rounded-0"
+                  >Ecommerce</a
+                >
+              </li>
+              <li class="nav-item">
+                <a data-filter=".plugin" href="" class="nav-link rounded-0"
+                  >Plugin</a
+                >
+              </li>
+            </ul>
+            <!-- Filter Menu end -->
+            <div class="portfolio wow fadeInUp">
+              <div class="row g-4 mt-3 portfolio-filter">
+                <div class="col-sm-12 col-lg-6 cms">
+                  <div class="portfolio-box">
+                    <div class="portfolio-img">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/clothingecommerce.png"
+                        alt=""
+                      />
+                      <!--<div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="images/realestate.png"></a>
+                    <div class="portfolio-overlay-details">
+                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
+                      <h5 class="text-white text-5">Detailed Project 1</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>-->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 cms">
+                  <div class="portfolio-box">
+                    <div class="portfolio-img">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/vactionrental.png"
+                        alt=""
+                      />
+                      <!--<div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="images/realestate.png"></a>
+                    <div class="portfolio-overlay-details">
+                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
+                      <h5 class="text-white text-5">Detailed Project 1</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>-->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 cms">
+                  <div class="portfolio-box">
+                    <div class="portfolio-img">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/bookservice.png"
+                        alt=""
+                      />
+                      <!--<div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="images/realestate.png"></a>
+                    <div class="portfolio-overlay-details">
+                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
+                      <h5 class="text-white text-5">Detailed Project 1</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>-->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 cms">
+                  <div class="portfolio-box">
+                    <div class="portfolio-img">
+                      <img
+                        class="img-fluid d-block"
+                        src="images/realestate.png"
+                        alt=""
+                      />
+                      <!--<div class="portfolio-overlay"> <a class="popup-ajax stretched-link" href="images/realestate.png"></a>
+                    <div class="portfolio-overlay-details">
+                      <p class="text-primary text-8"><i class="fas fa-file-alt"></i></p>
+                      <h5 class="text-white text-5">Detailed Project 1</h5>
+                      <span class="text-light">Category</span> </div>
+                  </div>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Portfolio end -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
-        <!-- Main Js -->
-        <script src="js/app.js"></script>
-    </body>
+        <!-- Call to Action
+    ============================================= -->
+        <section>
+          <div class="hero-wrap">
+            <div class="hero-mask opacity-8 bg-dark"></div>
+            <div
+              class="hero-bg parallax"
+              style="background-image: url('images/developerback.jpg')"
+            ></div>
+            <div class="hero-content section">
+              <div class="container text-center py-5 wow fadeInUp">
+                <h2 class="text-10 fw-600 text-white mb-5">
+                  Interested in working with me?
+                </h2>
+                <a
+                  href="#contact"
+                  class="btn btn-primary rounded-0 smooth-scroll wow rubberBand"
+                  data-wow-delay="1s"
+                  >Hire Me!</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Call to Action end -->
+
+        <!-- FAQ
+    ============================================= -->
+        <!--<section id="faq" class="section bg-light">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6 order-1 order-lg-0 wow fadeInUp"> 
+            
+            <p class="text-center text-lg-start mb-2"><span class="bg-primary text-dark px-2">FAQ</span></p>
+            <h2 class="text-10 fw-600 text-center text-lg-start mb-5">Have any questions?</h2>
+           
+            <div class="accordion accordion-flush" id="faqTopics">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne"> What is Callum? </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#faqTopics">
+                  <div class="accordion-body"> Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> How Can I Help You? </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faqTopics">
+                  <div class="accordion-body">
+                    <p>Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+                    <p class="mb-0">Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Simple process of workflow? </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faqTopics">
+                  <div class="accordion-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree"> Is Callum a Multi-purpose template? </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#faqTopics">
+                  <div class="accordion-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree"> Why responsive one page template? </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#faqTopics">
+                  <div class="accordion-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center justify-content-center order-0 order-lg-1 wow fadeIn" data-wow-delay="1s"> <img class="img-fluid" src="images/faq.png" title="FAQ" alt="faq"> </div>
+        </div>
+      </div>
+    </section>-->
+        <!-- FAQ end -->
+
+        <!-- Testimonial
+    ============================================= -->
+        <section
+          id="testimonial"
+          class="section bg-secondary"
+          style="
+            background: linear-gradient(to bottom, #f5df4e 0%, #333300 100%);
+          "
+        >
+          <div class="container">
+            <!-- Heading -->
+            <p class="text-center mb-2 wow fadeIn">
+              <span class="bg-primary text-dark px-2">Client Speak</span>
+            </p>
+            <h2 class="text-10 fw-600 text-white text-center mb-5 wow fadeIn">
+              What Some of my Clients Say
+            </h2>
+            <!-- Heading end-->
+            <div class="row">
+              <div class="col-lg-9 mx-auto wow fadeInUp">
+                <div
+                  class="owl-carousel owl-theme owl-light"
+                  data-autoplay="true"
+                  data-loop="true"
+                  data-nav="true"
+                  data-margin="30"
+                  data-slideby="1"
+                  data-stagepadding="5"
+                  data-items-xs="1"
+                  data-items-sm="1"
+                  data-items-md="1"
+                  data-items-lg="1"
+                >
+                  <div class="item text-center px-5">
+                    <span class="text-9 text-primary"
+                      ><i class="fa fa-quote-start"></i
+                    ></span>
+                    <p class="text-5 text-white">
+                      Suman did a wonderful job at setuping my Wordpress theme,
+                      and solved some issues related to iPage hosting. I
+                      definetely recommend him!”
+                    </p>
+                    <strong class="d-block text-3 fw-600 text-white"
+                      >Michael Dionn</strong
+                    >
+                  </div>
+                  <div class="item text-center px-5">
+                    <span class="text-9 text-primary"
+                      ><i class="fa fa-quote-start"></i
+                    ></span>
+                    <p class="text-5 text-white">
+                      Verry Good Guy i am gonna de with him again he setup my
+                      website in less than 12hour Verry good seller will deal
+                      again with him aaaaa+++”
+                    </p>
+                    <strong class="d-block text-3 fw-600 text-white"
+                      >Jongil Bert</strong
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonial end -->
+
+        <!-- Contact Me
+    ============================================= -->
+        <section id="contact" class="section bg-primary">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-12 ms-auto mt-12 mt-lg-0 wow fadeInUp"
+                data-wow-delay="0.3s"
+              >
+                <h2 class="text-10 fw-600 text-center mb-5">
+                  Get in Touch with Me For Free Consultation?
+                </h2>
+                <!-- Contact Form -->
+                <iframe
+                  src="https://tally.so/embed/w81WGx?alignLeft=1&hideTitle=1&transparentBackground=1"
+                  width="100%"
+                  height="300px"
+                  frameborder="0"
+                  marginheight="0"
+                  marginwidth="0"
+                  title="Contact form
+			"
+                >
+                </iframe>
+                <!-- Contact Form end -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Me end -->
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================================= -->
+      <footer id="footer" class="section bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-start wow fadeInUp">
+              <p class="mb-2 mb-lg-0">Copyright © 2022. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 wow fadeInUp"></div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back to Top
+============================================= -->
+    <a
+      id="back-to-top"
+      class="rounded-circle"
+      data-bs-toggle="tooltip"
+      title="Back to Top"
+      href="javascript:void(0)"
+      ><i class="fas fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Easing -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Appear -->
+    <script src="js/jquery.appear.min.js"></script>
+    <!-- WOW animation -->
+    <script src="js/wow.min.js"></script>
+    <!-- Images Loaded -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- Typed -->
+    <script src="js/typed.min.js"></script>
+    <!-- Parallax Bg -->
+    <script src="js/parallaxie.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- isotope Portfolio Filter -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Style Switcher -->
+    <script src="js/switcher.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/theme.js"></script>
+  </body>
 </html>
